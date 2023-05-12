@@ -1,5 +1,5 @@
 import React from 'react'
-// import "./Histogram.css"
+import "./Histogram.css"
 import {
     Chart as ChartJs,
     BarElement,
@@ -59,20 +59,6 @@ const Histogram = ({name,freq}) => {
               display: true
             }
           }]
-        },
-        title: {
-          display: true,
-          text: 'Histogram of Data',
-          fontSize: 20,
-          fontColor: '#333'
-        },
-        legend: {
-          display: true,
-          position: 'top',
-          labels: {
-            fontSize: 14,
-            fontColor: '#333'
-          }
         }
       };
   return (
