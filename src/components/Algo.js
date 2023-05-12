@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Hash from './Hash';
 
 
-const Algo = ({data,setName,setFreq,freq,name}) => {
+const Algo = ({data,setName,setFreq}) => {
 
     useEffect(() => {
 // console.log(data.data);
@@ -13,7 +13,7 @@ const algo=()=>{
                                  // splitting string and including only characters 
                                 //  filtering it out the whitspace element
     const arr=(data).split(/[^A-Za-z]+/).filter(element => element);
-    console.log(arr);
+    // console.log(arr);
     const hashTable=new Hash();
     // hashTable.add("Hritick",1);
     // // console.log(hashTable.findValue("Hritick")!==null);
@@ -53,15 +53,16 @@ const sortTable=(hashTable)=>{
     keys.sort(function(a, b) {
         return hashTable.findValue(a) - hashTable.findValue(b);
     }).reverse().forEach(function(k) {
-       console.log(hashTable.findValue(k));
-       if(i++<20){
+      //  console.log(hashTable.findValue(k));
+       if(i<20){
+             if(k.length>1){
        setName(prevNames => [...prevNames, k]); 
-       setFreq(prevFreq => [...prevFreq, hashTable.findValue(k)]);}
+       setFreq(prevFreq => [...prevFreq, hashTable.findValue(k)]);i++;}}
     });
 }
 
   return (
-    <div>Algo</div>
+    <div></div>
   )
 }
 

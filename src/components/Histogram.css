@@ -1,0 +1,23 @@
+.outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Histogram{
+    
+    height: 500px;
+    width: 600px;     
+}
+@media (max-width:768px) {
+    .outer{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .Histogram{
+        
+        height: 200px;
+        width: 300px;     
+    }
+}

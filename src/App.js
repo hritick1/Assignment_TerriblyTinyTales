@@ -1,25 +1,34 @@
 import Algo from "./components/Algo";
 import Data from "./components/Data";
-import { useEffect,useState } from 'react'
+import { useEffect, useState } from 'react';
+import Histogram from "./components/Histogram";
 
 function App() {
-  const [data, setData] = useState("");
   const [name, setName] = useState([]);
   const [freq, setFreq] = useState([]);
-  
-useEffect(() => {
-  // if (name.length > 0 && freq.length > 0)
-    for(let i=0;i<name.length;i++){
-      console.log(name[i]+":"+freq[i]);
+  const [data, setData] = useState("");
+
+  useEffect(() => {
+    const getData = async () => {
+      const result = await Data();
+      setData(result);
     }
-}, [name])
+    getData();
+  }, []);
 
-
+  useEffect(() => {
+    // console.log(data);
+    if (name.length > 0 && freq.length > 0) {
+      for (let i = 0; i < name.length; i++) {
+        console.log(name[i] + ":" + freq[i]);
+      }
+    }
+  }, [data, name, freq]);
 
   return (
     <div className="App">
-      <Data data={data} setData={setData}/>
-      <Algo data={data} setName={setName} setFreq={setFreq} name={name} freq={freq}/>
+      <Algo data={data} setName={setName} setFreq={setFreq} />
+      <Histogram name={name} freq={freq}/>
     </div>
   );
 }

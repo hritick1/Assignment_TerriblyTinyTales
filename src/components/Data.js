@@ -1,31 +1,17 @@
-import React, { useState } from 'react'
-import { useEffect } from 'react'
 import axios from 'axios'
 
-const Data = ({data,setData}) => {
-    
 
-    useEffect(() => {
-        const  fetchData=async()=>{
+ const  Data=async()=>{
        return  axios.get('https://www.terriblytinytales.com/test.txt');
         }
-        const getData=async()=>{
-            const data1=await fetchData();
+        
+        export default async function getData(){
+            const data1=await Data();
             // console.log(data1.data);
-            setData(data1.data);
+            return data1.data;
             // console.log(data);
         }
-        getData();
-          }, []);
-
-        
-
-          
       
   
-  return (
-    <div>Data</div>
-  )
-}
 
-export default Data
+
