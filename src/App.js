@@ -4,12 +4,14 @@ import { useEffect, useState } from 'react';
 import Histogram from "./components/Histogram";
 import Excel from "./components/Excel";
 import Home from "./pages/Home";
+import Main from "./pages/Main";
+import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
 
 function App() {
   const [name, setName] = useState([]);
   const [freq, setFreq] = useState([]);
   const [data, setData] = useState("");
-
+  const [pname, setPname] = useState([])
   useEffect(() => {
     const getData = async () => {
       const result = await Data();
@@ -32,7 +34,14 @@ function App() {
       {/* <Algo data={data} setName={setName} setFreq={setFreq} />
       <Histogram name={name} freq={freq}/>
       <Excel name={name} freq={freq}/> */}
-      <Home/>
+      
+     
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home pname={pname} setPname={setPname}/>}></Route>
+          <Route path="/main" element={ <Main pname={pname}/>} ></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }

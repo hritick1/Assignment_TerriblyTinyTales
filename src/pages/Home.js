@@ -1,9 +1,33 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Home.css'
+import { Button } from '@mui/material';
+import {  TextField } from '@mui/material'
+import { useNavigate } from "react-router-dom";
 
-const Home = () => {
+
+const Home = ({pname,setPname}) => {
+  const navigate=useNavigate();
+  const [email, setEmail] = useState([]);
+    const handleSubmit=(e)=>{
+      e.preventDefault();
+  console.log(pname);
+    navigate('/main');
+    }
+    
   return (
-    <div>Home</div>
+    <div className='container'>
+      <div className="box">
+      <p className="welcome">Welcome!</p> 
+    
+    <TextField label="Enter Your Name" variant="outlined" value={pname} className='name'
+        onChange={(e)=>setPname(e.target.value)}/>
+    <TextField label="Enter Your Email" variant="outlined" value={email} className='email'
+        onChange={(e)=>setEmail(e.target.value)}/>
+      <Button variant='contained'size='large' className='button'
+    style={{color:'#5B07E3',width:185}} onClick={handleSubmit} href="/">Submit</Button>
+</div>
+</div>
+    
   )
 }
 
