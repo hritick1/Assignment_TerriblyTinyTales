@@ -2,6 +2,7 @@ import Algo from "./components/Algo";
 import Data from "./components/Data";
 import { useEffect, useState } from 'react';
 import Histogram from "./components/Histogram";
+import Excel from "./components/Excel";
 
 function App() {
   const [name, setName] = useState([]);
@@ -29,6 +30,7 @@ function App() {
     <div className="App">
       <Algo data={data} setName={setName} setFreq={setFreq} />
       <Histogram name={name} freq={freq}/>
+      <Excel name={name} freq={freq}/>
     </div>
   );
 }
