@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import "./Histogram.css"
 import {
     Chart as ChartJs,
@@ -19,23 +19,11 @@ const Histogram = ({name,freq}) => {
         labels:name,
         datasets:[{
             label:'Words',
-            data:freq,
-           backgroundColor: [
-      'rgba(255, 99, 132, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(75, 192, 192, 0.2)',
-      'rgba(255, 206, 86, 0.2)',
-      'rgba(153, 102, 255, 0.2)',
-      'rgba(255, 159, 64, 0.2)'
-    ],
-    borderColor: [
-      'rgba(255, 99, 132, 1)',
-      'rgba(54, 162, 235, 1)',
-      'rgba(75, 192, 192, 1)',
-      'rgba(255, 206, 86, 1)',
-      'rgba(153, 102, 255, 1)',
-      'rgba(255, 159, 64, 1)'
-    ],
+            data:freq,      
+            backgroundColor:['#FF068D',
+            '#1815BB','#BC44CF'
+          ],
+
             borderWidth:1,
         }]
     }
@@ -62,12 +50,15 @@ const Histogram = ({name,freq}) => {
         }
       };
   return (
-    <div className="outer">Histogram
+    <div className="outer">
+      <p className='freq'>Frequency</p>
         <div className="Histogram" >
             <Bar data={data} options={options}>
 
             </Bar>
+            <p className='word'>Words</p>
         </div>
+      
     </div>
   )
 }

@@ -31,15 +31,15 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Algo data={data} setName={setName} setFreq={setFreq} />
-      <Histogram name={name} freq={freq}/>
-      <Excel name={name} freq={freq}/> */}
+      <Algo data={data} setName={setName} setFreq={setFreq} />
+    
+      {/* <Excel name={name} freq={freq}/> */}
       
      
       <Router>
         <Routes>
           <Route path="/" element={<Home pname={pname} setPname={setPname}/>}></Route>
-          <Route path="/main" element={ <Main pname={pname}/>} ></Route>
+          <Route path="/main" element={ <Main pname={pname} name={name} freq={freq}/>} ></Route>
         </Routes>
       </Router>
     </div>

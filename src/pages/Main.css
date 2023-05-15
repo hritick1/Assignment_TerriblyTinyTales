@@ -1,0 +1,34 @@
+.maincon{
+    height: 100vh;
+    background-image: url('/public/back.svg'); 
+}
+.container1{
+   
+}
+.head{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+   
+    position: absolute;
+width: 487px;
+height: 100px;
+top: 10px;
+left:240px;
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 900;
+font-size: 70px;
+line-height: 73px;
+
+background: linear-gradient(90.09deg, #5B07E3 0.12%, #B7238D 106.06%), #FFFFFF;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+.table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
