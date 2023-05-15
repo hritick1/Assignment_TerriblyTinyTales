@@ -1,10 +1,44 @@
 .maincon{
+    display: flex;
+    flex-direction: row;
     height: 100vh;
     background-image: url('/public/back.svg'); 
 }
-.container1{
-   
+.container1 {
+    background-color: azure;
+    display: flex;
+    width: 67%;
+    height: 100%;
+    padding-left: 35px;
+    justify-content: left;
+    align-items:end; 
+  }
+  
+  .container2 {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .table{
+    position: absolute;
+    width: 250px;
+    height: 550px;
+    margin-top: 165px;
+    border: 4px solid #FFFFFF;
+    left: calc(50% - 362px/2 + 492px);
+    top: calc(50% - 809px/2 - 58.5px);
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    background: linear-gradient(358.93deg, rgba(0, 0, 0, 0.2) 0.88%, rgba(0, 0, 0, 0.126) 99.05%), linear-gradient(176.89deg, rgba(217, 217, 217, 0.6) 2.46%, rgba(217, 217, 217, 0.312) 100.7%);
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    /* Note: backdrop-filter has minimal browser support */
+    text-align: center;
 }
+ 
 .head{
     display: flex;
     justify-content:center;
@@ -26,9 +60,58 @@ background: linear-gradient(90.09deg, #5B07E3 0.12%, #B7238D 106.06%), #FFFFFF;
 -webkit-text-fill-color: transparent;
 background-clip: text;
 }
-.table{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.thd{
+    position: relative;
+width: 52.76px;
+height: 10px;
+
+justify-content: space-around;
+
+font-family: 'Avenir';
+font-style: normal;
+font-weight: 900;
+font-size: 18.6207px;
+line-height: 25px;
+
+color: rgba(255, 255, 255, 0.9);
+margin-bottom: 30px;
 }
+.thd th{
+    padding: 15px;
+  
+}
+
+.data{
+    position: relative;
+justify-content: space-around;
+font-family: 'Avenir';
+font-style: normal;
+
+
+color: rgba(255, 255, 255, 0.9);
+
+}
+.data td{
+    width: 4px;
+    height: 5px;
+    font-weight: 300;
+font-size: 13.6207px;
+line-height: 5px;
+
+}
+
+
+  
+  .thd th,
+  .data td {
+    border: 2px solid #FFFFFF;
+    padding: 8px;
+   
+  }
+
+  .excel{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-top: 565px;
+  }

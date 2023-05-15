@@ -33,7 +33,7 @@ function App() {
     <div className="App">
       <Algo data={data} setName={setName} setFreq={setFreq} />
     
-      {/* <Excel name={name} freq={freq}/> */}
+      {/*  */}
       
      
       <Router>

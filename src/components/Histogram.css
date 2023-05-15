@@ -1,9 +1,5 @@
 .outer{
-    background-color: azure;
     display: flex;
-    width: 67%;
-    height: 100%;
-    padding-left: 35px;
     justify-content: left;
     align-items:end; 
    
