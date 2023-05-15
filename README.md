@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+TerriblyTinyTales is a React application that analyzes text data and displays the frequency of each word using a histogram. The application also provides a tabular view of the data and allows users to export the data in an Excel file.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Installation
+To install the application, you need to clone this repository and run the following command:
+npm install
+This will install all the required dependencies for the application.
 
-## Available Scripts
+Usage
+To start the application, run the following command:
+npm start
+This will start the application and open it in your default browser.
 
-In the project directory, you can run:
+Data Module
+Using Axios fetches the data and returns to App component
 
-### `npm start`
+Hash Class
+Hash class is used for hashing the words and counting their frequency
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Algo Component
+Here the data is used from app component and converted to array and then using Hash class we count the frquency of each words and top 20 are returned back to App js along with their frequency.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Home Component
+The Home component is the first page of the application. Here, the user needs to enter their name and email and click on the submit button to view the next component.
 
-### `npm test`
+Main Component
+The Main component is the main page of the application. Here, the user can view the frequency of each word in the provided text data using a histogram and a tabular view.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Histogram
+The Histogram component takes in an array of words and their frequency and converts it into a histogram using React Chart.js.
 
-### `npm run build`
+Excel
+The Excel component is provided with an array of words and their frequency. It uses the xlsx and file-saver libraries to convert the data into an Excel file and export it.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Libraries Used
+The following libraries were used to develop this application:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+React Material UI
+Axios
+Chart.js
+SheetJS-style
+XLSX
+React Toastify
+File-saver
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Deployment
+The application is deployed on Vercel and can be accessed at https://terriblytales.vercel.app/
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributing
+Contributions are welcome! Please create a pull request or an issue if you want to contribute to the application.
