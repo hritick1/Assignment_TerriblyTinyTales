@@ -19,12 +19,12 @@ const Home = ({pname,setPname}) => {
       <div className="box">
       <p className="welcome">Welcome!</p> 
     
-    <TextField label="Enter Your Name" variant="outlined" value={pname} className='name'
+    <TextField label="Name" variant="outlined" value={pname} className='name'
         onChange={(e)=>setPname(e.target.value)}/>
-    <TextField label="Enter Your Email" variant="outlined" value={email} className='email'
+    <TextField label="Email" variant="outlined" value={email} className='email'
         onChange={(e)=>setEmail(e.target.value)}/>
       <Button variant='contained'size='large' className='button'
-    style={{color:'#5B07E3',width:185}} onClick={handleSubmit} href="/">Submit</Button>
+    style={{color:'#5B07E3'}} onClick={handleSubmit} href="/">Submit</Button>
 </div>
 </div>
     
