@@ -42,9 +42,9 @@ const Main = ({pname,name,freq}) => {
 })}
 
     </table>
+
     <div className="excel">
     <Excel name={name} freq={freq}/></div>
-    
     </div>
     
     </div>

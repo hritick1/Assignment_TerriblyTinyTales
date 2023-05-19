@@ -51,13 +51,13 @@ const Histogram = ({name,freq}) => {
       };
   return (
     <div className="outer">
-      <p className='freq'>Frequency</p>
         <div className="Histogram" >
+      <p className='freq'>Frequency</p>
             <Bar data={data} options={options}>
 
-            </Bar>
+            </Bar> </div>
             <p className='word'>Words</p>
-        </div>
+       
       
     </div>
   )

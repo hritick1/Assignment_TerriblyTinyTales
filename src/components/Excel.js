@@ -17,7 +17,7 @@ const Excel = ({name,freq}) => {
 
   return (
     <Button variant='contained'size='large'style={{
-      backgroundColor:'#FFFFFF', color:'#5B07E3',width: '275.29px',marginLeft:'30px',alignText:'center'}} onClick={(e) => {exportToCSV(words, "words")}}>Export</Button>
+      backgroundColor:'#FFFFFF', color:'#5B07E3',width: '26.5rem',alignText:'center'}} onClick={(e) => {exportToCSV(words, "words")}}>Export</Button>
   );
 }
 
