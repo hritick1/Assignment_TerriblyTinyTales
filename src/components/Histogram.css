@@ -12,7 +12,7 @@
     justify-content: center;
     align-items: center;
     height: 45rem;
-    width: 68rem;
+    width: 55rem;
 }
 
 .freq{
@@ -40,6 +40,23 @@ font-style: normal;
 font-weight: 900;
 font-size: 5rem;
 }
+@media (max-width:1970px) {
+    
+}
+@media (max-width:998px) {
+    .Histogram{
+        height: 60rem;
+        width: 43rem;     
+    } 
+    .freq{
+        font-size: 3.5rem;
+        margin-right: .01rem;
+        }
+        .word{
+        font-size: 3.5rem;
+        }
+  
+}
 
 @media (max-width:768px) {
     html{font-size: 50%;}
@@ -57,3 +74,4 @@ font-size: 5rem;
     }
 
 }
+
