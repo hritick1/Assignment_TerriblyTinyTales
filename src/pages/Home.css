@@ -13,8 +13,8 @@
 .box{
     position: absolute;
     background: linear-gradient(358.93deg, rgba(0, 0, 0, 0.2) 0.88%, rgba(0, 0, 0, 0.126) 99.05%), linear-gradient(176.89deg, rgba(217, 217, 217, 0.6) 2.46%, rgba(217, 217, 217, 0.312) 100.7%);
-    height: 28rem;
-    width: 30rem;
+    height: 23rem;
+    width: 25rem;
     transform: translate(-50%, -50%);
     box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6px);
@@ -32,7 +32,7 @@ justify-content: space-evenly;
 font-family: 'Playfair Display';
 font-style: normal;
 font-weight: 900;
-font-size: 5.8rem ;
+font-size: 3.5rem ;
 color: #FFFFFF;
 
 }
@@ -41,30 +41,16 @@ color: #FFFFFF;
 background: rgba(255, 255, 255, 0.26);
 border: 1px solid #FFFFFF;
 border-radius: 10px;
-width: 20rem;
 }
 .email{
     background: rgba(255, 255, 255, 0.26);
     border: 1px solid #FFFFFF;
     border-radius: 10px;
-    width: 20rem;
 }
 .button{
 background: #FFFFFF !important;
 box-shadow: 1.40803px 2.81605px 2.81605px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
-width: 19.5rem;
+width: 13.7rem;
 }
 
-
-@media (max-width:768px) {
-   
-    .box{
-        height: 35rem;
-        width: 35rem;
-
-    }
-    
-   
-
-    }
