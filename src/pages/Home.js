@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 
 
 const Home = ({pname,setPname}) => {
-  
   const navigate=useNavigate();
   const [email, setEmail] = useState([]);
     const handleSubmit=(e)=>{
